@@ -16,9 +16,14 @@ export class Menu {
 			titleDiv.innerHTML = "Orbital Turbulence"
 			let subtitleDiv = DomHelper.createDivWithClass("subtitle")
 			subtitleDiv.innerHTML = "A game by Bewelge"
-			let subsubtitleDiv = DomHelper.createDivWithClass("subsubTitle")
+			let subsubtitleDiv = DomHelper.createDivWithClass("subTitle")
 			subtitleDiv.appendChild(subsubtitleDiv)
-			subsubtitleDiv.innerHTML = "Created in 48h for LD-Jam 49"
+			subsubtitleDiv.innerHTML =
+				"In this version, planets attract each other and the game become unplayable ¯\\_(ツ)_/¯"
+			let subsubtitleDiv2 = DomHelper.createDivWithClass("subTitle")
+			subtitleDiv.appendChild(subsubtitleDiv2)
+			subsubtitleDiv2.innerHTML =
+				"<a href='https://github.com/Bewelge/Orbital-Turbulence-LDJam-49'>Click here for the real version of the game</a>"
 
 			this.cont.appendChild(titleDiv)
 			this.cont.appendChild(subtitleDiv)
